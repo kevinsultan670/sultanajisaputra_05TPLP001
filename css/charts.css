@@ -1,0 +1,123 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Heading styling */
+h1 {
+  color: #007bff;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Card styling */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-footer {
+  font-size: 0.9rem;
+  color: #666;
+  background-color: #f1f1f1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Button styling */
+.btn-secondary {
+  background-color: #007bff;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Icons and colors */
+i.fas {
+  margin-right: 8px;
+}
+
+.fas.fa-chart-area {
+  color: #f39c12;
+}
+
+.fas.fa-chart-bar {
+  color: #8e44ad;
+}
+
+.fas.fa-chart-pie {
+  color: #e74c3c;
+}
+
+/* Container and Row Styling */
+.container-fluid {
+  padding: 20px;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+/* Animation for charts */
+canvas {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .btn-secondary {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
